@@ -8,4 +8,3 @@ export const deleteUser = (id) => API.delete(`/${id}`);
 export const fetchUserByID = (id) => API.get(`/${id}`);
 export const putUser = (userId, updatedUser) => API.put(`/users/${userId}`, updatedUser);
 
-export const searchUsers = (searchTerm) => API.get(`/search?q=${searchTerm}`);

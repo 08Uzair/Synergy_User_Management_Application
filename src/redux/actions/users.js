@@ -53,11 +53,3 @@ export const updateUser = (userId, updatedUser) => async (dispatch) => {
   }
 };
 
-export const searchUsers = (searchTerm) => async (dispatch) => {
-  try {
-    const { data } = await api.searchUsers(searchTerm);
-    dispatch({ type: SEARCH_USER, payload: data });
-  } catch (error) {
-    console.log(error);
-  }
-};

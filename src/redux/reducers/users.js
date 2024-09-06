@@ -4,7 +4,6 @@ import {
   DELETE_USER,
   FETCH_USER_ID,
   UPDATE_USER,
-  SEARCH_USER
 } from "../constants/actionTypes";
 
 const usersReducer = (users = [], action) => {
@@ -25,9 +24,6 @@ const usersReducer = (users = [], action) => {
 
       case UPDATE_USER:
         users.map((user)=> user._id === action.payload._id ? action.payload :user );
-
-      case SEARCH_USER:
-        return action.payload; 
 
     default:
       return users;
