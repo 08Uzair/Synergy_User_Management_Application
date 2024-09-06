@@ -1,4 +1,9 @@
 # 👤User Management Application
+
+![userManagement1](https://github.com/user-attachments/assets/eaf29120-8f84-4fe4-a2a2-778320adb948)
+
+![userManagement2](https://github.com/user-attachments/assets/b9a9c85f-ba69-4480-9cb9-4a06aacc79ac)
+
 ## Overview
 This application is designed to manage users using the JSONPlaceholder API. It implements CRUD (Create, Read, Update, Delete) operations to interact with user data.
 
