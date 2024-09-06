@@ -32,7 +32,9 @@ function Table() {
   const [userId, setUserId] = useState();
 
   useEffect(() => {
-    dispatch(getUsers());
+    setTimeout(() => {
+      dispatch(getUsers());
+    }, 5000);
   }, [dispatch]);
 
   const handleCreateUser = async (e) => {
@@ -116,7 +118,9 @@ function Table() {
     setTimeout(await dispatch(updateUser(userId, updatedUser)), 2000);
     setIsUpdateOpen(false);
   };
-
+  if (users.length == 0) {
+    return <Loader />;
+  }
   return (
     <div className="m-3 backCss" ref={popoverRef}>
       <div className="h-full w-full border border-gray-200 rounded-lg">
